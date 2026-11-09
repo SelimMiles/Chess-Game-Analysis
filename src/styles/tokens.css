@@ -1,0 +1,190 @@
+/*
+ * Blunderscope design tokens.
+ * Concept: a club scoresheet marked up by a coach — cool ruled paper,
+ * ballpoint-blue ink, chess-book serif notation and red-pen annotations.
+ */
+
+:root {
+  color-scheme: light;
+
+  --font-ui: 'Atkinson Hyperlegible Next Variable', 'Atkinson Hyperlegible Next', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-book: 'Newsreader Variable', 'Newsreader', Georgia, 'Times New Roman', serif;
+
+  /* Type scale (16px base, ratio from the classic typographic scale). */
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.3125rem;
+  --fs-xl: 1.75rem;
+  --fs-2xl: 2.625rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-pill: 999px;
+
+  /* Paper & ink */
+  --page: #eef2f7;
+  --sheet: #ffffff;
+  --sheet-sunk: #f5f7fb;
+  --rule: #d6dee9;
+  --rule-strong: #b9c5d6;
+  --ink: #1b2f4e;
+  --ink-soft: #46597a;
+  --graphite: #5d6878;
+  --faint: #687385;
+  --redpen: #b3261e;
+  --focus: #2f6be6;
+  --button: #1b2f4e;
+  --button-text: #ffffff;
+  --hover: rgba(27, 47, 78, 0.06);
+  --selected: rgba(47, 107, 230, 0.12);
+  --shadow: 0 1px 2px rgba(27, 47, 78, 0.08), 0 8px 24px rgba(27, 47, 78, 0.08);
+
+  /* Evaluation (white vs black share) */
+  --eval-white: #fbfcfe;
+  --eval-black: #2c3d58;
+  --graph-white: #ffffff;
+  --graph-black: #c9d3e1;
+  --graph-line: #1b2f4e;
+  --graph-mid: #b9c5d6;
+
+  /* Move labels: --c-* fills marks (badges, dots); --t-* is readable text on sheets. */
+  --c-great: #2e6be6;
+  --c-best: #2e9a5e;
+  --c-excellent: #5fa36f;
+  --c-good: #8fa894;
+  --c-book: #a07c55;
+  --c-forced: #8a93a3;
+  --c-inaccuracy: #d4a800;
+  --c-mistake: #e2621b;
+  --c-blunder: #a81e1e;
+
+  --t-great: #2459c2;
+  --t-best: #1f7546;
+  --t-excellent: #3b7a4b;
+  --t-good: #566f5c;
+  --t-book: #7a5b39;
+  --t-forced: #5d6878;
+  --t-inaccuracy: #8a6a00;
+  --t-mistake: #b0450c;
+  --t-blunder: #a81e1e;
+
+  /* Glyph drawn on top of a mark fill (white or near-black, by the fill's luminance). */
+  --g-great: #ffffff;
+  --g-best: #ffffff;
+  --g-excellent: #10200f;
+  --g-good: #10200f;
+  --g-book: #ffffff;
+  --g-forced: #ffffff;
+  --g-inaccuracy: #1d1600;
+  --g-mistake: #ffffff;
+  --g-blunder: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    color-scheme: dark;
+    --page: #0f1522;
+    --sheet: #151d2e;
+    --sheet-sunk: #111827;
+    --rule: #26324a;
+    --rule-strong: #34425f;
+    --ink: #e3e8f1;
+    --ink-soft: #b9c3d4;
+    --graphite: #9aa6ba;
+    --faint: #7c879b;
+    --redpen: #ff7a8a;
+    --focus: #79a6ff;
+    --button: #dfe6f2;
+    --button-text: #0f1522;
+    --hover: rgba(227, 232, 241, 0.06);
+    --selected: rgba(121, 166, 255, 0.16);
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.3);
+    --eval-white: #e6eaf0;
+    --eval-black: #0a0f1a;
+    --graph-white: #3a4864;
+    --graph-black: #121a2a;
+    --graph-line: #e3e8f1;
+    --graph-mid: #34425f;
+    --c-great: #5b8def;
+    --c-best: #3dbe78;
+    --c-excellent: #63b87a;
+    --c-good: #8fa894;
+    --c-book: #b8946a;
+    --c-forced: #8a93a3;
+    --c-inaccuracy: #af8e2a;
+    --c-mistake: #c94c18;
+    --c-blunder: #ae1a69;
+    --t-great: #8fb3ff;
+    --t-best: #6fd69c;
+    --t-excellent: #8fd3a2;
+    --t-good: #b2c7b6;
+    --t-book: #d9bc96;
+    --t-forced: #aab3c2;
+    --t-inaccuracy: #e9c46a;
+    --t-mistake: #ff9b66;
+    --t-blunder: #ff7aa8;
+    --g-great: #ffffff;
+    --g-best: #06180d;
+    --g-excellent: #06180d;
+    --g-good: #06180d;
+    --g-book: #1b1206;
+    --g-forced: #0f1522;
+    --g-inaccuracy: #1d1600;
+    --g-mistake: #ffffff;
+    --g-blunder: #ffffff;
+  }
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --page: #0f1522;
+  --sheet: #151d2e;
+  --sheet-sunk: #111827;
+  --rule: #26324a;
+  --rule-strong: #34425f;
+  --ink: #e3e8f1;
+  --ink-soft: #b9c3d4;
+  --graphite: #9aa6ba;
+  --faint: #7c879b;
+  --redpen: #ff7a8a;
+  --focus: #79a6ff;
+  --button: #dfe6f2;
+  --button-text: #0f1522;
+  --hover: rgba(227, 232, 241, 0.06);
+  --selected: rgba(121, 166, 255, 0.16);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.3);
+  --eval-white: #e6eaf0;
+  --eval-black: #0a0f1a;
+  --graph-white: #3a4864;
+  --graph-black: #121a2a;
+  --graph-line: #e3e8f1;
+  --graph-mid: #34425f;
+  --c-great: #5b8def;
+  --c-best: #3dbe78;
+  --c-excellent: #63b87a;
+  --c-good: #8fa894;
+  --c-book: #b8946a;
+  --c-forced: #8a93a3;
+  --c-inaccuracy: #af8e2a;
+  --c-mistake: #c94c18;
+  --c-blunder: #ae1a69;
+  --t-great: #8fb3ff;
+  --t-best: #6fd69c;
+  --t-excellent: #8fd3a2;
+  --t-good: #b2c7b6;
+  --t-book: #d9bc96;
+  --t-forced: #aab3c2;
+  --t-inaccuracy: #e9c46a;
+  --t-mistake: #ff9b66;
+  --t-blunder: #ff7aa8;
+  --g-great: #ffffff;
+  --g-best: #06180d;
+  --g-excellent: #06180d;
+  --g-good: #06180d;
+  --g-book: #1b1206;
+  --g-forced: #0f1522;
+  --g-inaccuracy: #1d1600;
+  --g-mistake: #ffffff;
+  --g-blunder: #ffffff;
+}

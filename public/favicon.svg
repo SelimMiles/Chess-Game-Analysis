@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <style>
+    .lens { fill: #ffffff; stroke: #1b2f4e; }
+    .handle { stroke: #1b2f4e; }
+    @media (prefers-color-scheme: dark) {
+      .lens { fill: #151d2e; stroke: #e3e8f1; }
+      .handle { stroke: #e3e8f1; }
+    }
+  </style>
+  <circle class="lens" cx="13.5" cy="13.5" r="10" stroke-width="2.6"/>
+  <path class="handle" d="M21 21 L28.5 28.5" stroke-width="3.4" stroke-linecap="round"/>
+  <text x="13.5" y="17.6" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="11" fill="#d6392f">?!</text>
+</svg>

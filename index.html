@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Blunderscope: chess game analysis</title>
+    <meta
+      name="description"
+      content="Free chess game analysis in your browser. Stockfish reviews every move, finds your blunders, and shows accuracy and an evaluation graph. Import from Lichess or Chess.com."
+    />
+    <meta name="theme-color" content="#eef2f7" />
+    <meta property="og:title" content="Blunderscope: chess game analysis" />
+    <meta
+      property="og:description"
+      content="Stockfish reviews every move of your chess games, right in the browser. No account, nothing uploaded."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script>
+      // Apply the saved color theme before the page paints, to avoid a flash.
+      try {
+        var saved = JSON.parse(localStorage.getItem('blunderscope:settings') || '{}').theme;
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>Blunderscope needs JavaScript to run the chess engine in your browser.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

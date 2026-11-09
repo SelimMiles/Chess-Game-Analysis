@@ -1,0 +1,129 @@
+/* ————— Board (chessground) ————— */
+
+.board-ink {
+  --sq-light: #e6ecf4;
+  --sq-dark: #8a9fbc;
+}
+
+.board-ink cg-board {
+  background-color: #e6ecf4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23e6ecf4'/%3E%3Cpath fill='%238a9fbc' d='M1 0h1v1h-1zM3 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1z'/%3E%3C/svg%3E");
+}
+
+.board-walnut {
+  --sq-light: #ecd9b9;
+  --sq-dark: #b08561;
+}
+
+.board-walnut cg-board {
+  background-color: #ecd9b9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23ecd9b9'/%3E%3Cpath fill='%23b08561' d='M1 0h1v1h-1zM3 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1z'/%3E%3C/svg%3E");
+}
+
+.board-tournament {
+  --sq-light: #eeeedd;
+  --sq-dark: #6f9465;
+}
+
+.board-tournament cg-board {
+  background-color: #eeeedd;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23eeeedd'/%3E%3Cpath fill='%236f9465' d='M1 0h1v1h-1zM3 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1z'/%3E%3C/svg%3E");
+}
+
+.board-slate {
+  --sq-light: #dfe1e3;
+  --sq-dark: #868b93;
+}
+
+.board-slate cg-board {
+  background-color: #dfe1e3;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Crect width='8' height='8' fill='%23dfe1e3'/%3E%3Cpath fill='%23868b93' d='M1 0h1v1h-1zM3 0h1v1h-1zM5 0h1v1h-1zM7 0h1v1h-1zM0 1h1v1h-1zM2 1h1v1h-1zM4 1h1v1h-1zM6 1h1v1h-1zM1 2h1v1h-1zM3 2h1v1h-1zM5 2h1v1h-1zM7 2h1v1h-1zM0 3h1v1h-1zM2 3h1v1h-1zM4 3h1v1h-1zM6 3h1v1h-1zM1 4h1v1h-1zM3 4h1v1h-1zM5 4h1v1h-1zM7 4h1v1h-1zM0 5h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM6 5h1v1h-1zM1 6h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM7 6h1v1h-1zM0 7h1v1h-1zM2 7h1v1h-1zM4 7h1v1h-1zM6 7h1v1h-1z'/%3E%3C/svg%3E");
+}
+
+.board .cg-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.board cg-board square.last-move {
+  background-color: rgba(255, 214, 64, 0.48);
+}
+
+.board-walnut cg-board square.last-move,
+.board-tournament cg-board square.last-move {
+  background-color: rgba(255, 236, 64, 0.42);
+}
+
+.board cg-board square.selected {
+  background-color: rgba(47, 107, 230, 0.42);
+}
+
+.board cg-board square.check {
+  background: radial-gradient(ellipse at center, rgba(255, 0, 0, 1) 0%, rgba(231, 0, 0, 1) 25%, rgba(169, 0, 0, 0) 89%, rgba(158, 0, 0, 0) 100%);
+}
+
+.board cg-board square.move-dest {
+  background: radial-gradient(rgba(27, 47, 78, 0.38) 20%, rgba(0, 0, 0, 0) 0);
+}
+
+.board cg-board square.oc.move-dest {
+  background: radial-gradient(transparent 0%, transparent 79%, rgba(27, 47, 78, 0.38) 80%);
+}
+
+.board cg-board square.move-dest:hover {
+  background: rgba(47, 107, 230, 0.32);
+}
+
+/* Coordinates sit on the board edge, in the opposite square color. */
+.board .cg-wrap coords {
+  font-family: var(--font-ui);
+  font-size: clamp(9px, 1.6vmin, 12px);
+  font-weight: 700;
+  opacity: 1;
+  text-transform: lowercase;
+}
+
+.board .cg-wrap coords.ranks {
+  left: 3px;
+  top: 2px;
+}
+
+.board .cg-wrap coords.files {
+  bottom: 1px;
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+
+.board .cg-wrap coords.files coord {
+  padding-right: 4px;
+}
+
+.board .cg-wrap coords.ranks coord {
+  transform: none;
+  padding-top: 1px;
+}
+
+.board .cg-wrap coords coord:nth-child(odd) {
+  color: var(--sq-light);
+}
+
+.board .cg-wrap coords coord:nth-child(even) {
+  color: var(--sq-dark);
+}
+
+.board .cg-wrap coords.black coord:nth-child(odd) {
+  color: var(--sq-dark);
+}
+
+.board .cg-wrap coords.black coord:nth-child(even) {
+  color: var(--sq-light);
+}
+
+/* Move-label badge drawn in a square's corner (chessground custom SVG). */
+.badge-glyph {
+  font-family: var(--font-ui);
+  font-weight: 800;
+}
